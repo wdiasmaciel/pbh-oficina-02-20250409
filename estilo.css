@@ -26,7 +26,14 @@
     display: flex;
     justify-content: space-evenly;
 }
+
 input {
     width: 9rem;
-    
+}
+
+.painel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
 }

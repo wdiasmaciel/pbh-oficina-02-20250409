@@ -17,7 +17,9 @@
                 <input type="number" id="num2" class="numero" placeholder="segundo número">
                 <button onclick="somar()">Somar</button>
             </div>
-            <article id="resp" class="painel"></article>
+            <div class="painel">
+                <div id="resp"></div>
+            </div>
         </section>
     </div>
 
@@ -27,7 +29,7 @@
             var num2 = parseInt(document.getElementById("num2").value);
 
             var soma = num1 + num2;
-  
+
             document.getElementById("resp").innerHTML = `${num1} + ${num2} = ${soma}`;
         }
     </script>
