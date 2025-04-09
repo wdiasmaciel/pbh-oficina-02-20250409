@@ -36,4 +36,5 @@ input {
     justify-content: center;
     align-items: center;
     height: 16rem;
+    overflow: auto;
 }
