@@ -11,25 +11,25 @@
 <body>
 
     <div class="container">
-        <section id="resp" class="secao">
-            <input type="number" id="num1" class="numero" placeholder="primeiro número">
-            <input type="number" id="num2" class="numero" placeholder="segundo número">
+        <section class="secao">
+            <div class="entrada">
+                <input type="number" id="num1" class="numero" placeholder="primeiro número">
+                <input type="number" id="num2" class="numero" placeholder="segundo número">
+                <button onclick="somar()">Somar</button>
+            </div>
+            <article id="resp" class="painel"></article>
         </section>
     </div>
 
     <script>
-        /*
-         * Estrutura sequencial.
-         * Variável.
-         * Comandos de entrada.
-         * Arquivo de estilo externo.
-         */
-        var num1 = prompt("Informe o primeiro número:");
-        var num2 = prompt("Informe o segundo número:");
+        function somar() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
 
-        var soma = parseInt(num1) + parseInt(num2);
-
-        document.getElementById("resp").innerHTML += `${num1} + ${num2} = ${soma}`;
+            var soma = num1 + num2;
+  
+            document.getElementById("resp").innerHTML = `${num1} + ${num2} = ${soma}`;
+        }
     </script>
 
 </body>
